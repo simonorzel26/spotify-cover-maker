@@ -153,7 +153,7 @@ class ImageMapList extends Component {
 	render() {
 		return (
 			<Flex style={{ height: '100%' }} flexDirection="column">
-				{this.renderActions()}
+				{/* {this.renderActions()} */}
 				<div className="rde-canvas-list-items">{this.renderItem()}</div>
 			</Flex>
 		);

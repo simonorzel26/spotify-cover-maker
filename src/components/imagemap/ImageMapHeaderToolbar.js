@@ -19,6 +19,7 @@ class ImageMapHeaderToolbar extends Component {
 		return (
 			<Flex className="rde-editor-header-toolbar-container" flex="1">
 				<Flex.Item className="rde-canvas-toolbar rde-canvas-toolbar-list">
+					<ImageMapList canvasRef={canvasRef} selectedItem={selectedItem} />
 					<CommonButton
 						className="rde-action-btn"
 						shape="circle"
@@ -28,7 +29,7 @@ class ImageMapHeaderToolbar extends Component {
 					<div className="rde-canvas-list">
 						<ImageMapList canvasRef={canvasRef} selectedItem={selectedItem} />
 					</div>
-				</Flex.Item>
+					{/* </Flex.Item>
 				<Flex.Item className="rde-canvas-toolbar rde-canvas-toolbar-alignment">
 					<CommonButton
 						className="rde-action-btn"
@@ -176,7 +177,7 @@ class ImageMapHeaderToolbar extends Component {
 					>
 						Redo
 						<Icon name="redo-alt" style={{ marginLeft: 8 }} />
-					</CommonButton>
+					</CommonButton> */}
 				</Flex.Item>
 			</Flex>
 		);

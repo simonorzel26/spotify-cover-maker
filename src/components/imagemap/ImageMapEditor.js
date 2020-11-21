@@ -17,6 +17,7 @@ import '../../styles/index.less';
 import Container from '../common/Container';
 import CommonButton from '../common/CommonButton';
 import Canvas from '../canvas/Canvas';
+import ImageMapList from './ImageMapList';
 
 const propertiesToInclude = [
 	'id',
@@ -767,6 +768,7 @@ class ImageMapEditor extends Component {
 					canvasRef={this.canvasRef}
 					descriptors={descriptors}
 				/> */}
+				<ImageMapList canvasRef={this.canvasRef} selectedItem={selectedItem} />
 				<div className="rde-editor-canvas-container">
 					{/* <div className="rde-editor-header-toolbar">
 						<ImageMapHeaderToolbar
